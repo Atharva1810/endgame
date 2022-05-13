@@ -53,4 +53,14 @@ ng help
 ng generate --help
 
 ===================================================
+Error for text encoder
+
+Solution
+if you are having this error while running node server
+
+locate this file node_modules/whatwg-url/dist/encoding.js
+
+add this line at top const { TextEncoder, TextDecoder } = require("util");
+
+
 11w
